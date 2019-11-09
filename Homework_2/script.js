@@ -1,5 +1,6 @@
 "use strict";
 //task-1
+console.log("task-1");
 const x = 1;
 const y = 2;
 
@@ -20,6 +21,7 @@ console.log(res4); // Допишіть код, необхідно викорис
 console.log(typeof res4); // "number"
 
 //task-2
+console.log("task-2");
 const a = prompt("Enter your number:", 9);
 let b = a % 2 ? "odd" : "even";
 console.log(`The number ${a} is ${b}`);
@@ -32,6 +34,7 @@ console.log(`The number ${a} is a ${c} of 7`);
 // }
 
 //task-3
+console.log("task-3");
 const isAdult = confirm("Are you adult?");
 if (isAdult) {
   console.log(`You are an adult`);
@@ -40,6 +43,7 @@ if (isAdult) {
 }
 
 //task-4
+console.log("task-4");
 const firstSideOfTriangle = prompt("Enter number:", 5);
 const secondSideOfTriangle = prompt("Enter number", 7);
 const thirdSideOfTriangle = prompt("Enter number", 4);
@@ -66,6 +70,7 @@ if (
 }
 
 //task-5
+console.log("task-5");
 const now = new Date();
 console.log(now);
 const getHours = now.getHours();
@@ -84,3 +89,50 @@ switch (true) {
     console.log(`Good evening!!!`);
     break;
 }
+// Page 3 Task-1
+console.log("Page 3 task-1");
+
+function findAreaOfTheSquare(side) {
+  return side ** 2;
+}
+console.log(findAreaOfTheSquare(4));
+// Page 3 Task-2
+console.log("Page 3 task-2");
+function groupNumber(number) {
+  console.log(parseInt(number / 10));
+  console.log(number % 10);
+}
+groupNumber(48);
+// Page 3 Task-3
+console.log("Page 3 task-3");
+let firstNumber = prompt("Enter number:", 6);
+let secondNumber = prompt("Enter number again:", 2);
+if (firstNumber > 2 && secondNumber <= 3) {
+  console.log(
+    `First number is ${firstNumber} is more then 2 and a second number is ${secondNumber} is less then 3`
+  );
+} else {
+  console.log(`This numbers don't seem to be appropriate`);
+}
+// Page 3 Task-4
+console.log("Page 3 task-4");
+let andAgainFirstNumber = prompt("Enter number:", 1);
+let andAgainSecondNumber = prompt("Enter number again:", 2);
+let andAgainThirdNumber = prompt("Enter number again:", 3);
+if (
+  andAgainFirstNumber < andAgainSecondNumber &&
+  andAgainSecondNumber < andAgainThirdNumber
+) {
+  console.log(
+    `It is true that ${andAgainFirstNumber}<${andAgainSecondNumber}<${andAgainThirdNumber}`
+  );
+} else {
+  console.log(`Does not work for me!!!`);
+}
+// Page 3 Task-5
+console.log("Page 3 task-5");
+const num = prompt("Enter number:", 563);
+const checkNum = Math.floor(num / 100) > 0 ? "true" : "faulse";
+console.log(`It is ${checkNum} that number consist of 3 digits`);
+const checker = num % 2 ? "odd" : "even";
+console.log(`Number ${num} is ${checker}`);
