@@ -40,22 +40,30 @@ if (isAdult) {
 }
 
 //task-4
-const firstSideOfTriangle = prompt("Enter the length of first side:", 5);
-const secondSideOfTriangle = prompt("Enter the length of second side", 7);
-const thirdSideOfTriangle = prompt("Enter the length of third side", 4);
-const p =
-  (Number(firstSideOfTriangle) +
-    Number(secondSideOfTriangle) +
-    Number(thirdSideOfTriangle)) /
-  2;
-const findAreaOfTriangle = Math.sqrt(
-  p *
-    (p - firstSideOfTriangle) *
-    (p - secondSideOfTriangle) *
-    (p - thirdSideOfTriangle)
-);
-const rounded = findAreaOfTriangle.toFixed(3);
-console.log(`the area of triangle =${rounded}`);
+const firstSideOfTriangle = prompt("Enter number:", 5);
+const secondSideOfTriangle = prompt("Enter number", 7);
+const thirdSideOfTriangle = prompt("Enter number", 4);
+if (
+  firstSideOfTriangle != "" &&
+  secondSideOfTriangle != "" &&
+  thirdSideOfTriangle != ""
+) {
+  const p =
+    (Number(firstSideOfTriangle) +
+      Number(secondSideOfTriangle) +
+      Number(thirdSideOfTriangle)) /
+    2;
+  const findAreaOfTriangle = Math.sqrt(
+    p *
+      (p - firstSideOfTriangle) *
+      (p - secondSideOfTriangle) *
+      (p - thirdSideOfTriangle)
+  );
+  const rounded = findAreaOfTriangle.toFixed(3);
+  console.log(`the area of triangle =${rounded}`);
+} else {
+  alert("Come on!!! enter number!!!");
+}
 
 //task-5
 const now = new Date();
