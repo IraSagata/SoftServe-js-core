@@ -76,32 +76,25 @@
 // }
 
 // //task - 5;
-// console.log("Task - 5");
-// let enterEventCount = 0;
-// let leaveEventCount = 0;
-// let pressButton = 0;
+// console.log("Task - 5")
 // const button = document.querySelector("#button");
-// const mouseTarget = document.getElementById("mouseTarget");
 // const unorderedList = document.getElementById("unorderedList");
 
 // button.addEventListener("click", e => {
-//   pressButton++;
 //   addListItem("I was pressed");
 // });
 
-// mouseTarget.addEventListener("mouseenter", e => {
-//   enterEventCount++;
+// button.addEventListener("mouseenter", e => {
 //   addListItem("Mouse on me");
 // });
 
-// mouseTarget.addEventListener("mouseleave", e => {
-//   leaveEventCount++;
+// button.addEventListener("mouseleave", e => {
 //   addListItem("Mouse is not on me");
 // });
 
 // function addListItem(text) {
 //   const newTextNode = document.createTextNode(text);
-//   const newListItem = document.createElement("li");
+//   const newListItem = document.createElement("p");
 //   newListItem.appendChild(newTextNode);
 //   unorderedList.appendChild(newListItem);
 // }
@@ -117,8 +110,8 @@
 //   document.getElementById("text").innerHTML = txt;
 // }
 
-//task - 7;
-console.log("Task - 7");
+// //task - 7;
+// console.log("Task - 7");
 
 const cities = {
   us: ["New York", "Boston", "Chicago"],
@@ -137,7 +130,8 @@ function reloadCities(countryId) {
 
   let countryCities = getCities(countryId);
   for (const cityIndex in countryCities) {
-    var option = document.createElement("option");
+    let option = document.createElement("option");
+    console.log(option);
     option.text = countryCities[cityIndex];
     selectBoxCities.add(option);
   }
@@ -145,7 +139,14 @@ function reloadCities(countryId) {
 
 function onChange(s) {
   reloadCities(s[s.selectedIndex].id);
+  console.log(reloadCities(s[s.selectedIndex].id));
+  console.log(s);
 }
 
-let selectBoxCountry = document.getElementById("country");
+const selectBoxCountry = document.getElementById("country");
 reloadCities(selectBoxCountry[selectBoxCountry.selectedIndex].id);
+
+// let selected = Array.from(country.options)
+//   .filter(option => option.selected)
+//   .map(option => option.value);
+// alert(selected);
