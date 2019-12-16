@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css?family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Cambo&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+*:focus {
+  outline: none;
+}
+body {
+  /* background: #e96443;
+  background: -webkit-linear-gradient(
+    to right,
+    #e96443,
+    #904e95
+  );
+  background: linear-gradient(to right, #e96443, #904e95); */
+  background-image: url(./img/silver-2143730_1920.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.textview {
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 402px;
+  height: 150px;
+  font-family: "Cambo", serif;
+  color: gray;
+  border: none;
+  opacity: 0.4;
+  font-size: 50px;
+}
+table {
+  margin: 0 auto;
+}
+.button {
+  width: 100px;
+  height: 100px;
+  margin: 2px;
+  font-size: 50px;
+  font-family: "Cambo", serif;
+  cursor: pointer;
+  border: none;
+  color: gray;
+  background-color: rgb(34, 29, 44);
+  transition: 0.3s;
+}
+.button:hover {
+  background-color: rgb(59, 47, 83);
+  color: white;
+}
+.button:active {
+  background-color: #c76e08;
+
+  transform: translateY(4px);
+}
+.large-button {
+  width: 204px;
+  height: 100px;
+}
+.vertical-button {
+  height: 204px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main-section {
+  background-color: black;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+div {
+  padding: 50px 0 50px 0;
+}
+.main-header {
+  font-size: 50px;
+  font-family: "Lobster", cursive;
+}
